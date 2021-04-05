@@ -41,22 +41,36 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//IMAGES
+let image1 = document.getElementById("cta-img");
+image1.setAttribute('src', siteContent["cta"]["img-src"])
+
+
 //NAV
+const navBar = document.querySelectorAll('nav > a')
+navBar[0].textContent = siteContent.nav['nav-item-1'];
+navBar[1].textContent = siteContent.nav['nav-item-2'];
+navBar[2].textContent = siteContent.nav['nav-item-3'];
+navBar[3].textContent = siteContent.nav['nav-item-4'];
+navBar[4].textContent = siteContent.nav['nav-item-5'];
+navBar[5].textContent = siteContent.nav['nav-item-6'];
 
-let link1 = document.querySelector('nav a');
-link1.append('Services')
+// let link1 = document.querySelector('nav a');
+// link1.append('Services')
 
-let link2 = document.querySelector('nav a:nth-of-type(2)')
-link2.append('Product')
+// let link2 = document.querySelector('nav a:nth-of-type(2)')
+// link2.append('Product')
 
-let link3 = document.querySelector('nav a:nth-of-type(3)')
-link3.append('Vision')
+// let link3 = document.querySelector('nav a:nth-of-type(3)')
+// link3.append('Vision')
 
-let link4 = document.querySelector('nav a:nth-of-type(4)')
-link4.append('Features')
+// let link4 = document.querySelector('nav a:nth-of-type(4)')
+// link4.append('Features')
 
-let link5 = document.querySelector('nav a:nth-of-type(5)')
-link5.append('About')
+// let link5 = document.querySelector('nav a:nth-of-type(5)')
+// link5.append('About')
 
-let link6 = document.querySelector('nav a:nth-of-type(6)')
-link6.append('Contact')
+// let link6 = document.querySelector('nav a:nth-of-type(6)')
+// link6.append('Contact')
+
+//CTA
