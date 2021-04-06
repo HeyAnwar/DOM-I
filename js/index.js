@@ -106,3 +106,13 @@ botSubtitles[4].textContent = siteContent['main-content']['vision-h4']
 botParagraphs[2].textContent = siteContent['main-content']['services-content']
 botParagraphs[3].textContent = siteContent['main-content']['product-content']
 botParagraphs[4].textContent = siteContent['main-content']['vision-content']
+
+//Contact
+const contactSection = document.querySelector('.contact h4')
+const contactAddress = document.querySelector('.contact p')
+const contactPhone = document.querySelector('.contact p:nth-of-type(2)')
+const contactEmail = document.querySelector('.contact p:nth-of-type(3)')
+contactSection.textContent = siteContent['contact']['contact-h4']
+contactAddress.textContent = siteContent['contact']['address']
+contactPhone.textContent = siteContent['contact']['phone']
+contactEmail.textContent = siteContent['contact']['email']
