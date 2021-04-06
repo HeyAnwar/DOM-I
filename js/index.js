@@ -55,6 +55,8 @@ navBar[3].textContent = siteContent.nav['nav-item-4'];
 navBar[4].textContent = siteContent.nav['nav-item-5'];
 navBar[5].textContent = siteContent.nav['nav-item-6'];
 
+navBar.forEach(item => item.style.color = 'green')
+
 // let link1 = document.querySelector('nav a');
 // link1.append('Services')
 
@@ -73,4 +75,34 @@ navBar[5].textContent = siteContent.nav['nav-item-6'];
 // let link6 = document.querySelector('nav a:nth-of-type(6)')
 // link6.append('Contact')
 
-//CTA
+//Header
+const headerTitle = document.querySelector('.cta-text h1');
+headerTitle.textContent = siteContent['cta']['h1'];
+
+//Button
+const buttonText = document.querySelector('.cta-text button');
+buttonText.textContent = siteContent['cta']['button']
+
+//Top
+const topContent = document.querySelector('.top-content')
+const topSubtitles = document.querySelectorAll('h4')
+const topParagraph = document.querySelectorAll('p')
+topSubtitles[0].textContent = siteContent['main-content']['features-h4']
+topSubtitles[1].textContent = siteContent['main-content']['about-h4']
+topParagraph[0].textContent = siteContent['main-content']['features-content']
+topParagraph[1].textContent = siteContent['main-content']['about-content']
+
+//Mid image
+const middleImage = document.querySelector('#middle-img')
+middleImage.src = siteContent['main-content']['middle-img-src']
+
+//Bottom
+const bottomContent = document.querySelector('.bottom-content')
+const botSubtitles = document.querySelectorAll('h4')
+const botParagraphs = document.querySelectorAll('p')
+botSubtitles[2].textContent = siteContent['main-content']['services-h4']
+botSubtitles[3].textContent = siteContent['main-content']['product-h4']
+botSubtitles[4].textContent = siteContent['main-content']['vision-h4']
+botParagraphs[2].textContent = siteContent['main-content']['services-content']
+botParagraphs[3].textContent = siteContent['main-content']['product-content']
+botParagraphs[4].textContent = siteContent['main-content']['vision-content']
