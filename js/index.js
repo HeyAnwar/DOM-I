@@ -55,25 +55,16 @@ navBar[3].textContent = siteContent.nav['nav-item-4'];
 navBar[4].textContent = siteContent.nav['nav-item-5'];
 navBar[5].textContent = siteContent.nav['nav-item-6'];
 
-navBar.forEach(item => item.style.color = 'green')
+const link = document.createElement('a')
+link.innerText = 'dog'
+document.querySelector('nav').appendChild(link)
+const link2 = document.createElement('a')
+link2.innerText = 'cat'
+document.querySelector('nav').prepend(link2)
+const color = document.querySelectorAll('nav a')
+color.forEach(item => item.style.color = 'green')
 
-// let link1 = document.querySelector('nav a');
-// link1.append('Services')
 
-// let link2 = document.querySelector('nav a:nth-of-type(2)')
-// link2.append('Product')
-
-// let link3 = document.querySelector('nav a:nth-of-type(3)')
-// link3.append('Vision')
-
-// let link4 = document.querySelector('nav a:nth-of-type(4)')
-// link4.append('Features')
-
-// let link5 = document.querySelector('nav a:nth-of-type(5)')
-// link5.append('About')
-
-// let link6 = document.querySelector('nav a:nth-of-type(6)')
-// link6.append('Contact')
 
 //Header
 const headerTitle = document.querySelector('.cta-text h1');
@@ -116,3 +107,7 @@ contactSection.textContent = siteContent['contact']['contact-h4']
 contactAddress.textContent = siteContent['contact']['address']
 contactPhone.textContent = siteContent['contact']['phone']
 contactEmail.textContent = siteContent['contact']['email']
+
+//Footer
+const footer = document.querySelector('footer p')
+footer.innerText = siteContent['footer']['copyright']
